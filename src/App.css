@@ -1,38 +1,130 @@
-.App {
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f2f6f9, #e1e8ed);
+  margin: 0;
+  padding: 0;
+}
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+h2 {
   text-align: center;
+  color: #1e2a38;
+  font-weight: 700;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  margin-top: 30px;
+  font-weight: 600;
+  color: #1e2a38;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  text-align: center;
+  color: #6c757d;
+  font-size: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100px;
+  border-radius: 12px;
+}
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+.form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+.form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.form button {
+  background-color: #007bff;
   color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-
-.App-link {
-  color: #61dafb;
+.form button:hover {
+  background-color: #0056b3;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  background-color: #c82333;
+}
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.user-info img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  object-fit: cover;
+}
+.user-info p {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+}
+button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+button:hover {
+  background-color: #c82333;
+}
+@media (max-width: 600px) {
+  .user-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .logout-btn {
+    position: static;
+    margin: 20px auto;
+    display: block;
   }
 }

@@ -1,14 +1,31 @@
 {
   "users": [
     {
-      "id": "af1e",
-      "name": "nila",
-      "email": "nila@gmail.com"
+      "id": "c14f",
+      "name": "gayathri",
+      "email": "gayathri14@gmail.com"
     },
     {
-      "id": "f2ea",
+      "id": "69c6",
+      "name": "naveen",
+      "email": "naveen14@gmail.com"
+    },
+    {
+      "id": "f479",
+      "name": "amarnath",
+      "email": "amar@gamil.com"
+    },
+    {
+      "id": "548c",
       "name": "sasmitha",
-      "email": "Sasmithakannan01@gmail.com"
+      "email": "Sasmithakannan01@gmail.com",
+      "role": "Member"
+    },
+    {
+      "id": "9d16",
+      "name": "nila",
+      "email": "nila146@gmail.com",
+      "role": "Member"
     }
   ]
 }
